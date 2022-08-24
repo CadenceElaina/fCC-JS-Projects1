@@ -1,0 +1,51 @@
+@media all and (min-width: 992px) {
+    .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .nav-item:hover .nav-link {}
+
+    .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+.icon {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.nav-link {
+    font-size: 14px !important;
+    margin: 0 .75rem;
+}
+
+h5 {
+    font-size: 2rem !important;
+    opacity: 1 !important;
+    color: black;
+}
+
+.imgs {
+    opacity: .9 !important;
+}
+
+.carousel-caption {
+    background-color: pink;
+    opacity: .9;
+}
