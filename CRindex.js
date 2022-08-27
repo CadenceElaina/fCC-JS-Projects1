@@ -1,3 +1,6 @@
+const add = document.querySelector(".add");
+const remove = document.querySelector(".remove");
+let result = "";
 const checkCashRegister = (price, cash, cid) => {
     const UNIT_AMOUNT = {
         "PENNY": .01,
@@ -44,3 +47,22 @@ const checkCashRegister = (price, cash, cid) => {
 
 
 checkCashRegister(3.26, 100, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]])
+
+add.addEventListener("click", function () {
+
+    const cont = document.querySelector(".menu");
+    /*   let input = document.querySelector(".put"); */
+    let str = document.getElementById("string").value;
+    const newli = document.createElement("LI");
+    newli.className = "result";
+    console.log(str);
+    console.log(checkCashRegister(str));
+    newli.innerText = ` ${checkCashRegister(str)}`;
+    //newli.innerText = input.value;
+    cont.append(newli);
+});
+
+remove.addEventListener("click", function () {
+    const df = document.querySelector(".menu");
+    df.firstElementChild.remove();
+});

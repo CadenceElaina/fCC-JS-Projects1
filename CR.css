@@ -1,0 +1,121 @@
+body {
+    background-color: pink;
+}
+
+/* Navbar section */
+
+.nav {
+    z-index: 10;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: deeppink;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 2rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: deeppink;
+}
+
+.example-div {
+    margin-top: 150px;
+    box-shadow: 0 0 60px 20px black;
+    float: left;
+    border: 2px solid white;
+    border-left: none;
+    width: 30%;
+    background-color: var(--color2);
+}
+
+#code {
+    font-size: 12px;
+}
+
+.example {
+    text-align: center;
+}
+
+/* app */
+.app {
+    word-wrap: break-word;
+    padding: 1rem;
+    margin: 0 auto;
+    top: 300px;
+    width: 50%;
+    position: absolute;
+    margin-left: 420.69px;
+}
+
+.tnv {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input1 {
+    margin: 0 auto;
+    padding: 1rem;
+    margin-left: 150px;
+    /*should use calc to line up with title properly or rather just use grid or something 
+        to make it responsive and formatted correctly */
+
+}
+
+.put {
+    width: 70%;
+    background-color: lightblue;
+}
+
+.details {
+
+    margin-top: 1rem;
+    margin-left: 300px;
+}
+
+.linkHolder {
+    margin-top: 20px;
+}

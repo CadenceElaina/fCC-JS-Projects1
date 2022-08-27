@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #242f40;
+    --color2: #3d4057;
+    --color3: #655978;
+    --color4: #9e7ca2;
+    --color5: #eaa9d2;
+    --color6: #9b59b6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+h2 {
+    color: var(--color5);
+    padding: .5rem;
+}
+
+.details {
+    padding: .5rem;
+    color: var(--color4);
+    text-decoration: none;
+}
+
+.rot13 {
+    color: var(--color4);
+}
+
+.rot13:hover {
+    color: var(--color6);
+}
+
+.details:hover {
+    color: var(--color6);
+}
+
+.app {
+    color: var(--color5);
+    padding: 2rem;
+}
+
+input {
+    border: 2px var(--color5) solid;
+    padding: .5rem;
+    color: var(--color6);
+    width: 310px;
+    background-color: var(--color2);
+}
+
+input:hover {
+    background-color: lightgray !important;
+    border-color: var(--c4);
+}
+
+span {
+    font-size: 1rem;
+    color: var(--c1);
+    height: 32px;
+}
+
+.put {
+    margin: 1rem;
+}
+
+.example-div {
+    box-shadow: 0 0 50px 30px black;
+    border-left: 2px solid var(--color5);
+    border-bottom: 2px solid var(--color5);
+    float: right;
+    width: 30%;
+    background-color: var(--color2);
+}
+
+.example {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.list-item {
+    color: white;
+    text-decoration: none;
+    line-height: 2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.btn {
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 15px;
+    border: 2px var(--color5) solid;
+    background-color: var(--color2);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+    width: 250px;
+    height: 75px;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 25px 10px var(--color6);
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            var(--color3),
+            transparent);
+    transition: all 650ms;
+}
+
+.btn:hover:before {
+    left: 100%;
+}
+
+.container1 {
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--color1);
+
+    /*  display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+
+}
+
+.circle {
+    box-shadow: 0 0 50px 10px black;
+    border: 2px solid var(--color5);
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #ccc;
+    /*  justify-content: center;
+    align-items: center; */
+    background: url("Julius Caesar.jpg");
+    background-size: cover;
+    margin: 0 auto;
+    filter: brightness(1.5) contrast(1.5);
+}
+
+footer {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+}
+
+.footer {
+    background-color: aliceblue;
+    opacity: .95;
+    border-right: 3px var(--color5) solid;
+    border-bottom: 3px solid var(--color5);
+    box-shadow: 0 0 50px 30px black;
+}
+
+#author {
+    color: var(--c5)
+}
+
+.links {
+    opacity: 1 !important;
+    line-height: 1.5rem;
+}
+
+ul li {
+    list-style: none;
+    left: 0;
+}
+
+a:hover {
+    color: var(--color6);
+}
+
+#a {
+    margin-left: 1rem;
+}
+
+/* .logo {
+    margin-top: 25px;
+    margin-left: 25px;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: url("Julius Caesar.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    filter: brightness(1.5) contrast(1.5);
+}
+
+.text {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+span {}
+
+.text span {
+    width: 100%;
+    height: 100%;
+    color: black;
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 100px;
+} */
