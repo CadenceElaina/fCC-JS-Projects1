@@ -1,5 +1,11 @@
 const add = document.querySelector(".add");
 const remove = document.querySelector(".remove");
+const input = document.getElementById("string");
+let valid = false;
+let hasHovered = false;
+//Regex const variable
+const isNum = /\d/g;
+
 let result = "";
 let count = 0;
 let hasRun = false;
@@ -22,15 +28,19 @@ function convertToRoman(num) {
     count++;
     return result;
 }
+
 add.addEventListener("click", function () {
 
     const cont = document.querySelector(".menu");
     /*   let input = document.querySelector(".put"); */
     let str = document.getElementById("string").value;
+    //if (str.match)
+
     const newli = document.createElement("LI");
     newli.className = "result";
-    console.log(str);
-    console.log(convertToRoman(str));
+
+    //console.log(str);
+    //console.log(convertToRoman(str));
     newli.innerText = convertToRoman(str);
     //newli.innerText = input.value;
     cont.append(newli);
@@ -40,6 +50,33 @@ remove.addEventListener("click", function () {
     const df = document.querySelector(".menu");
     df.firstElementChild.remove();
 });
+
+
+/* input.addEventListener('mouseover', mouseHoverFunction());
+input.addEventListener("mouseout", mouseOutFunction);
+let value = document.getElementById("string").value;
+if (!value.match(isNum)) {
+    valid = true;
+} */
+//function mouseHoverFunction() {
+/*     hasHovered = true;
+    console.log(hasHovered); */
+//}
+
+//function mouseOutFunction() {
+/*     const newli = document.createElement("LI");
+    newli.className = "result";
+    if (hasHovered === true && valid === false) {
+        newli.innerText = "Please enter a number!";
+    }
+    else {
+        newli.innerText = "Valid";
+    } */
+//}
+/* console.log(hasHovered); */
+/* if (str.match(!isNum)) {
+    newli.innerHTML = "Please enter a number!"
+} */
 
 /* function test() {
     let str = document.getElementById("string").value;

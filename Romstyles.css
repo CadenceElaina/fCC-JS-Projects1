@@ -56,6 +56,7 @@ body {
 }
 
 input {
+    max-width: 75%;
     border: 2px var(--c6) solid;
     padding: .5rem;
     color: var(--c4);

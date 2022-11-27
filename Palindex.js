@@ -1,4 +1,6 @@
-const btn = document.getElementById("btn");
+const input = document.getElementById("string"); //input const  
+const btn = document.getElementById("btn");     //button const
+
 function palindrome(str) {
     const alphanumbericOnly = str
         .toLowerCase()
@@ -19,3 +21,16 @@ function test() {
         return value.innerHTML = str + " is not a palindrome!";
     };
 }
+//Allows user to type in a value into input and if they click enter it returns the function run on click.
+
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function (event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("btn").click();
+    }
+});

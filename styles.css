@@ -21,6 +21,9 @@
 .h5 {
     font-size: 2rem !important;
 }
+h5:hover{
+    color: #0ea5e9 !important;
+}
 
 .icon {
     margin-left: 10px;
