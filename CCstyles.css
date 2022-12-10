@@ -177,11 +177,38 @@ footer {
 .footer {
     background-color: aliceblue;
     opacity: .95;
+
     border-right: 3px var(--color5) solid;
     border-bottom: 3px solid var(--color5);
     box-shadow: 0 0 50px 30px black;
 }
-
+@media screen and (max-width: 760px) {
+    body {
+      background-color: lightgreen;
+    }
+    .circle{
+       
+        width: 150px;
+        height: 150px;
+    }
+    button{
+        max-width: 150px;
+    }
+  }
+@media screen and (max-width: 700px) {
+    .footer{
+        width: 50%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+   button{
+   max-width: 100px;
+   margin: 10px !important;
+   }
+   .example-div{
+    width: 25%;
+   }
+  }
 #author {
     color: var(--c5)
 }
@@ -203,6 +230,7 @@ a:hover {
 #a {
     margin-left: 1rem;
 }
+
 
 /* .logo {
     margin-top: 25px;

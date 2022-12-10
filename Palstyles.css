@@ -52,6 +52,7 @@ input {
     border: 2px var(--c6) solid;
     padding: .5rem;
     color: var(--c4);
+    width: 75%;
 
 }
 
